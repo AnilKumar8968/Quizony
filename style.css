@@ -1,0 +1,205 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#menu{
+    display: none;
+}
+nav{
+    background-color: #f1f1f1;
+    padding:20px;
+}
+#b1{
+    font-weight: bold;
+}
+#ham{
+    position: absolute;
+    top:20px;
+    right: 15px;
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+.same{
+    text-align: center;
+    padding: 5px;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    color:#333333;
+    /* color: gray; */
+} 
+aside{
+    display: none;
+}
+article{
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* above code is mobile version*/
+
+@media only screen and (min-width:801px){
+    #menu{
+        display: block;
+    }
+    #ham{
+        display: none;
+    }
+    ul li{
+        display: inline-block;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    #button{
+        margin-left: 150px;
+    }
+    ul li a:hover{
+        text-decoration: underline;
+    }
+    #searchIcon{
+        cursor: pointer;
+    }
+    aside{
+        display: block;
+    }
+    article{
+        width: 70%;
+        background-color: white;
+    }
+    
+}  /*above code is pc version  */
+
+/* after navbar */
+main{
+    display: flex;
+}
+.quizTitle{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px;
+}
+.quizDes{
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+}
+.picture{
+    width: 100%;
+}
+
+#asideContainer{
+    width: 350px; 
+    height: 1683px;
+    
+    
+}
+.asideFirst{
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    border-left: 0.5px solid lightgray;
+    box-shadow: 1.4px 1.4px 2px lightgray;
+    border:1px solid gray;
+    display: block;
+    width:100% ;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+.asideFirst:hover{
+    background-color: lightgray;
+}
+#first{
+    margin:40px 0;
+}
+#second{
+    background-color: white;
+    border-left: 0.5px solid lightgray;
+    box-shadow: 1.4px 1.4px 2px lightgray;
+}
+#second a{
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+#second a:hover{
+    background-color: lightgray;
+}
+
+
+footer a{
+    text-decoration: none;
+    font-size: 14px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer div{
+    text-align: center;
+    padding-bottom: 5px;
+}
+#copyright{
+    font-size: 14px;
+}
+footer{
+    border-top: 0.5px solid grey;
+}
+#title{
+    text-align: center;
+    margin: 20px;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.subContainer{
+    background-color: white;
+    border-left: 0.5px solid lightgray;
+    box-shadow: 1.4px 1.4px 2px lightgray;
+}
+.subContainer:hover{
+    cursor: pointer;
+}
+
+@media only screen and  (min-width:480px){
+   
+    #container{
+        display: grid;
+        grid-template-rows: repeat(auto-fill,minmax(200px,363px));
+        grid-template-columns:repeat(auto-fill,minmax(200px,363px));
+        gap: 25px;
+        justify-content: center;
+    }
+}
+/* for tab and pc main section */
+
+@media only screen and  (max-width:479px){
+   
+    #container{
+        display: grid;
+        grid-template-rows: repeat(auto-fill,minmax(200px,363px));
+        grid-template-columns:repeat(auto-fill,minmax(200px,363px));
+        gap: 25px;
+        justify-content: center;
+        margin:0 20px;
+    }
+}
+/* for mobile main section */
